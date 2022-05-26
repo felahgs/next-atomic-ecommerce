@@ -34,12 +34,12 @@
         { 
             "newlinesBetween": "always",
             "groups": [
-                ["/^react[\/a-z]*/, /^next[\/a-z]*/"],
+                ["/^react[\/a-z]*/", "/^next[\/a-z]*/"],
                 "module",
                 "/^@shared/",
-                "/^pages/",
-                "/^components/",
-                ["parent", "sibling", "index"]
+                ["/^pages/", "/^components/"],
+                ["parent", "sibling", "index"],
+                "/^styles/"
             ],
             "alphabetize": { "order": "asc", "ignoreCase": true }
         }
