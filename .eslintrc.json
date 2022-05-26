@@ -1,7 +1,8 @@
 {
     "env": {
         "browser": true,
-        "es2021": true
+        "es2021": true,
+        "jest": true
     },
     "settings": {
       "react": {
@@ -30,11 +31,14 @@
     "rules": {
       "import-helpers/order-imports": [
         "warn",
-        { // example configuration
+        { 
             "newlinesBetween": "always",
             "groups": [
+                ["/^react[\/a-z]*/, /^next[\/a-z]*/"],
                 "module",
                 "/^@shared/",
+                "/^pages/",
+                "/^components/",
                 ["parent", "sibling", "index"]
             ],
             "alphabetize": { "order": "asc", "ignoreCase": true }
