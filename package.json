@@ -10,7 +10,8 @@
     "test": "jest",
     "test:cov": "jest --coverage",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@types/glob": "^7.2.0",
@@ -52,6 +53,7 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.30.0",
     "eslint-plugin-storybook": "^0.5.12",
+    "husky": "^8.0.1",
     "jest-environment-jsdom": "^28.1.0",
     "prettier": "^2.6.2",
     "typescript": "4.7.2"
@@ -60,5 +62,10 @@
     "trim-newlines": "^4.0.2",
     "trim": "^1.0.1",
     "glob-parent": "^5.1.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn lint"
+    }
   }
 }
