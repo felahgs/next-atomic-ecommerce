@@ -10,8 +10,6 @@ export default  createGlobalStyle`
     body {
         background: ${(props) => props.theme.background};
         color: ${props => props.theme.text}; 
-        /* font-family: 'Times New Roman', Times, serif       */
-        /* font-family: 'Courier New', Courier, monospace      */
         font-family: 'Inter'
     }
     h1 {

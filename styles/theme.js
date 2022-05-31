@@ -1,8 +1,12 @@
+import { colors } from './colors';
+
 export const lightTheme = {
   background: '#FFFFFF',
   titles: '#2C2738',
   text: '#2C2738',
   accent: '#0880AE',
+
+  ...colors
 };
 
 export const darkTheme = {
@@ -10,4 +14,7 @@ export const darkTheme = {
   titles: '#D6E1DF',
   text: '#D6E1DF',
   accent: '#8A85FF',
+
+  ...colors
 };
+
