@@ -4,6 +4,7 @@ module.exports = {
   testEnvironment: 'jsdom',
   testPathIgnorePatterns: [
     "/node_modules/",
+    "src/stories",
     "/.next/",
     "/cypress/"
   ],
@@ -15,9 +16,15 @@ module.exports = {
   "collectCoverage": false,
   "collectCoverageFrom": [
     "pages/**",
-    "src/**",
+    "src/**/*.ts",
+    "src/**/*.tsx",
     //ignored files
     "!pages/_app.tsx",
+    "!pages/_document.tsx",
+    "!src/stories/**",
+    "!src/**/*.types.ts*",
+    "!src/**/*.stories.ts*",
+    "!src/**/*.style.ts*"
   ],
   "coverageThreshold": {
     "global": {
