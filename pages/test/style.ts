@@ -15,6 +15,4 @@ export const Container = styled.div`
   border-radius: 20px;
 `;
 
-export const Header = styled.h1`
-
-`;
+export const Header = styled.h1``;

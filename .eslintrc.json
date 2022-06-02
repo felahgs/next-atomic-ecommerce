@@ -1,72 +1,60 @@
 {
-    "env": {
-        "browser": true,
-        "es2021": true,
-        "jest": true
-    },
-    "settings": {
-      "react": {
-        "version": "detect"
-      }
-    },
-    "extends": [
-        "eslint:recommended",
-        "plugin:react/recommended",
-        "plugin:@typescript-eslint/recommended",
-        "plugin:@next/next/recommended",
-        "plugin:cypress/recommended"
-    ],
-    "parser": "@typescript-eslint/parser",
-    "parserOptions": {
-        "ecmaFeatures": {
-            "jsx": true
-        },
-        "ecmaVersion": "latest",
-        "sourceType": "module"
-    },
-    "plugins": [
-        "react",
-        "cypress",
-        "@typescript-eslint",
-        "eslint-plugin-import-helpers"
-    ],
-    "rules": {
-      "cypress/no-assigning-return-values": "error",
-      "cypress/no-unnecessary-waiting": "error",
-      "cypress/assertion-before-screenshot": "warn",
-      "cypress/no-force": "warn",
-      "cypress/no-async-tests": "error",
-      "cypress/no-pause": "error",
-      "import-helpers/order-imports": [
-        "warn",
-        { 
-            "newlinesBetween": "always",
-            "groups": [
-                ["/^react[\/a-z]*/", "/^next[\/a-z]*/"],
-                "module",
-                "/^@shared/",
-                ["/^pages/", "/^components/"],
-                ["parent", "sibling", "index"],
-                ["/^style/", "/^types/"]
-            ]
-            // "alphabetize": { "order": "asc", "ignoreCase": true }
-        }
-      ],
-      "indent": [
-          "error",
-          2
-      ],
-      "linebreak-style": [
-          "error",
-          "unix"
-      ],
-      "quotes": [
-          "warn",
-          "single"
-      ],
-      "semi": [
-          "error",
-          "always"
-      ]
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "jest": true
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
     }
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@next/next/recommended",
+    "plugin:cypress/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": [
+    "react",
+    "cypress",
+    "@typescript-eslint",
+    "eslint-plugin-import-helpers"
+  ],
+  "rules": {
+    "cypress/no-assigning-return-values": "error",
+    "cypress/no-unnecessary-waiting": "error",
+    "cypress/assertion-before-screenshot": "warn",
+    "cypress/no-force": "warn",
+    "cypress/no-async-tests": "error",
+    "cypress/no-pause": "error",
+    "import-helpers/order-imports": [
+      "warn",
+      {
+        "newlinesBetween": "always",
+        "groups": [
+          ["/^react[/a-z]*/", "/^next[/a-z]*/"],
+          "module",
+          "/^@shared/",
+          ["/^pages/", "/^components/"],
+          ["parent", "sibling", "index"],
+          ["/^style/", "/^types/"]
+        ]
+        // "alphabetize": { "order": "asc", "ignoreCase": true }
+      }
+    ],
+    "indent": ["error", 2],
+    "linebreak-style": ["error", "unix"],
+    "quotes": ["warn", "single"],
+    "semi": ["error", "always"]
+  }
 }

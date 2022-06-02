@@ -3,4 +3,4 @@ export type SearchInput = {
   value?: string | number;
   onChange?: () => void;
   onClear?: () => void;
-}
+};

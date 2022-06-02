@@ -4,9 +4,11 @@ import 'styled-components';
 declare module 'styled-components' {
   export interface DefaultTheme {
     colors: {
-      [value: string]: string | {
-        [value: number]: string
-      };
-    }
+      [value: string]:
+        | string
+        | {
+            [value: number]: string;
+          };
+    };
   }
 }

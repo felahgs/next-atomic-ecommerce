@@ -21,11 +21,11 @@ export const Search = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 Search.args = {
   name: 'search',
-  size: 45
+  size: 45,
 };
 
 export const Close = Template.bind({});
 Close.args = {
   name: 'close',
-  size: 45
+  size: 45,
 };

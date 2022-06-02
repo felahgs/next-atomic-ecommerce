@@ -2,7 +2,7 @@ import React from 'react';
 
 import { fireEvent, render, screen } from 'tests/test-utils';
 
-import {SearchInput} from './SearchInput';
+import { SearchInput } from './SearchInput';
 
 describe('SearchInput', () => {
   it('should the component', () => {
@@ -14,8 +14,8 @@ describe('SearchInput', () => {
     render(<SearchInput />);
 
     const input = screen.getByRole('textbox') as HTMLTextAreaElement;
-    fireEvent.change(input, {target: {value: 'testing asdf'}});
-    
+    fireEvent.change(input, { target: { value: 'testing asdf' } });
+
     screen.debug();
     expect(input.value).toBe('testing asdf');
 
