@@ -1,5 +1,5 @@
 export const colors = {
-  blue:  {
+  blue: {
     30: '#9DC2FF',
     60: '#2979FF',
     70: '#2264D1' ,
@@ -13,6 +13,6 @@ export const colors = {
     100: '#19191D'
   },
 
-  icons: '#787885',
+  icon: '#787885',
   red: '#F44336'
 };

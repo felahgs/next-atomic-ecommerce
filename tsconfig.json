@@ -14,9 +14,11 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
-    "baseUrl": ".",
+    "baseUrl": "./",
     "paths": {
-      "@components/*": ["components/*"],
+      "@atoms/*": ["./src/atoms/*"],
+      "@molecules/*": ["./src/molecules/*"],
+      "@organisms/*": ["./src/organisms/*"],
       "@pages/*": ["pages/*"],
       "@styles/*": ["styles/*"],
     }

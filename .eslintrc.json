@@ -47,7 +47,7 @@
                 "/^@shared/",
                 ["/^pages/", "/^components/"],
                 ["parent", "sibling", "index"],
-                "/^styles/"
+                ["/^style/", "/^types/"]
             ]
             // "alphabetize": { "order": "asc", "ignoreCase": true }
         }
