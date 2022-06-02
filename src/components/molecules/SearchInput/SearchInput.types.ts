@@ -1,4 +1,4 @@
-export type Input = {
+export type SearchInput = {
   width: string;
   search: boolean;
   value?: string | number;

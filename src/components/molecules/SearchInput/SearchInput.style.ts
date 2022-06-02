@@ -31,7 +31,7 @@ export const ClearButton = styled.button`
   cursor: pointer;
 `;
 
-export const Input = styled.input`
+export const SearchInput = styled.input`
 border: none;
 background-color: transparent;
 

@@ -3,12 +3,12 @@ import React, {useState} from 'react';
 
 import { Icon } from '@atoms/Icon';
 
-import * as T from './Input.types';
-import * as S from './Input.style';
+import * as T from './SearchInput.types';
+import * as S from './SearchInput.style';
 
 import {useTheme} from 'styled-components';
 
-export const Input = ({width, search=true}: T.Input) => {
+export const SearchInput = ({width}: T.SearchInput) => {
   const [value, setValue] = useState<string>('');
   const theme = useTheme();
 
@@ -17,11 +17,11 @@ export const Input = ({width, search=true}: T.Input) => {
 
   return (
     <S.Container>
-      {search && <S.WrapperSearchIcon>
+      <S.WrapperSearchIcon>
         <Icon name="search" />
-      </S.WrapperSearchIcon>}
+      </S.WrapperSearchIcon>
 
-      <S.Input onChange={handleChange} value={value} width={width}/>
+      <S.SearchInput onChange={handleChange} value={value} width={width}/>
 
       {value.length > 0 && <S.ClearButton onClick={handleClear}>
         <Icon name="close" title="clear search" color={theme.colors.blue[60]} />
