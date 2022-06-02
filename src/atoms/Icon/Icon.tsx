@@ -1,15 +1,12 @@
-import React from 'react';
-
 import icons from './iconList';
-import * as S from './Icon.style';
 import * as T from './Icon.types';
 
-export const Icon = ({name, size}: T.Icon) => {
+import {useTheme} from 'styled-components';
 
-  console.log('icons', icons);
-  return (
-    <S.Container>
-      {icons[name](size)}
-    </S.Container>
-  );
+export const Icon = ({name, size = 20, color, title}: T.Icon) => {
+  const theme = useTheme();
+  const customColor = color || theme.colors.icon as string;
+
+  return icons[name]({size, color: customColor, title});
+
 };

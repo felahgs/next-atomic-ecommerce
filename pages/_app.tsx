@@ -2,7 +2,6 @@ import type { AppProps } from 'next/app';
 import React, { useState } from 'react';
 
 import { ThemeProvider } from 'styled-components';
-
 import GlobalStyles from 'styles/globalStyles';
 import { lightTheme, darkTheme } from 'styles/theme';
 
