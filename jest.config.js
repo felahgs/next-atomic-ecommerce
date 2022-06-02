@@ -10,6 +10,10 @@ module.exports = {
   ],
   moduleNameMapper: {
     "^components(.*)$": "<rootDir>/components$1",
+    "^atoms(.*)$": "<rootDir>/components/atoms$1",
+    "^molecules(.*)$": "<rootDir>/components/molecules$1",
+    "^organisms(.*)$": "<rootDir>/components/organisms$1",
+    "^templates(.*)$": "<rootDir>/components/templates$1",
     "^pages(.*)$": "<rootDir>/pages$1",
     "^tests(.*)$": "<rootDir>/tests$1",
     "^styles(.*)$": "<rootDir>/styles$1",
