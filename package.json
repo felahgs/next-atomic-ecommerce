@@ -69,11 +69,13 @@
   "resolutions": {
     "trim-newlines": "^4.0.2",
     "trim": "^1.0.1",
-    "glob-parent": "^5.1.2"
+    "glob-parent": "^5.1.2",
+    "node-fetch": ">=2.6.7"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn lint"
+      "pre-commit": "yarn lint",
+      "pre-push": "yarn prettier --write ."
     }
   }
 }
