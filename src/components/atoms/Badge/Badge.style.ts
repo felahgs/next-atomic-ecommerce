@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
-export const Badge = styled.div<{color: string}>`
-  background-color: ${({color}) => color};
-  
+export const Badge = styled.div<{ color: string }>`
+  background-color: ${({ color }) => color};
+
   position: relative;
   width: 20px;
   height: 20px;
@@ -17,5 +17,5 @@ export const Badge = styled.div<{color: string}>`
   font-size: 14px;
   font-family: system-ui;
   line-height: 18px;
-  color: #FFFFFF;
+  color: #ffffff;
 `;
