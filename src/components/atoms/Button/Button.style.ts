@@ -9,18 +9,20 @@ export const Button = styled.button<{
   background-color: #fff;
   transition: ease 0.5;
 
-  cursor: pointer;
   min-width: 104px;
   height: 40px;
-
+  
+  font-family: 'Quicksand';
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 150%;
   letter-spacing: 0.0075em;
   color: ${({ theme }) => theme.colors.blue[70]};
-  transition: 0.2s;
 
+  transition: 0.2s;
+  cursor: pointer;
+  
   :hover {
     filter: brightness(95%);
   }

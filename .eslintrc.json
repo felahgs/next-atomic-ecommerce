@@ -37,6 +37,7 @@
     "cypress/no-force": "warn",
     "cypress/no-async-tests": "error",
     "cypress/no-pause": "error",
+    "react/display-name": "off",
     "import-helpers/order-imports": [
       "warn",
       {
