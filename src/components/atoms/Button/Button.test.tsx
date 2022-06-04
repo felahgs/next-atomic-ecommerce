@@ -5,7 +5,7 @@ import { fireEvent, render, screen } from 'tests/test-utils';
 import { Button } from './Button';
 
 describe('Button', () => {
-  it('should the component', () => {
+  it('should render the component', () => {
     render(<Button onClick={jest.fn()}>Press me!</Button>);
     expect(screen.getByRole('button')).toBeInTheDocument();
   });

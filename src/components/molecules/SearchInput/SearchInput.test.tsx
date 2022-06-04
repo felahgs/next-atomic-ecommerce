@@ -5,7 +5,7 @@ import { fireEvent, render, screen } from 'tests/test-utils';
 import { SearchInput } from './SearchInput';
 
 describe('SearchInput', () => {
-  it('should the component', () => {
+  it('should render the component', () => {
     render(<SearchInput />);
     expect(screen.getByRole('textbox')).toBeInTheDocument();
   });
