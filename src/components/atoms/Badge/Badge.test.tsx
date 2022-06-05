@@ -10,7 +10,7 @@ describe('Button', () => {
     expect(screen.getByText(/42/g)).toBeInTheDocument();
   });
 
-  it('should render a badge with \'99+\' when the value has more than 2 digits ', () => {
+  it("should render a badge with '99+' when the value has more than 2 digits ", () => {
     render(<Badge value={1701}> Test </Badge>);
     expect(screen.getByText(/99+/g)).toBeInTheDocument();
   });

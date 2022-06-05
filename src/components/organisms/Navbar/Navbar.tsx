@@ -24,11 +24,9 @@ const Navbar = () => {
       </S.ContainerCenter>
 
       <S.ContainerRight>
-        <Button onClick={() => console.log('signin action')}>Sign in</Button>
+        <Button>Sign in</Button>
         <Badge value={12}>
-          <Button onClick={() => console.log('open cart action')}>
-            My cart
-          </Button>
+          <Button>My cart</Button>
         </Badge>
         <Avatar>FS</Avatar>
       </S.ContainerRight>
