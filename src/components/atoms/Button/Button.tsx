@@ -11,7 +11,7 @@ export const Button = ({
   disabled = false,
 }: T.Button) => {
   const handleClick = () => {
-    onClick();
+    onClick && onClick();
   };
 
   return (

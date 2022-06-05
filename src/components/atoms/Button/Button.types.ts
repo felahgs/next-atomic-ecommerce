@@ -5,5 +5,5 @@ export type Button = {
   variant?: 'default' | 'raised';
   disabled?: boolean;
   size?: 'small' | 'medium' | 'large';
-  onClick: () => void;
+  onClick?: () => void;
 };
