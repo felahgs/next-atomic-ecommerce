@@ -7,13 +7,16 @@ import { useTheme } from 'styled-components';
 
 export const Badge = ({ color, value, children }: T.Badge) => {
   const { colors } = useTheme();
-
-  if (!value || value <= 0) return null;
+  const showBadge = !!(value && value > 0);
 
   return (
     <S.Container>
       {children}
-      <S.Badge color={color || (colors.red as string)}>{value}</S.Badge>
+      {showBadge && (
+        <S.Badge color={color || (colors.red as string)}>
+          {value > 99 ? '99+' : value}
+        </S.Badge>
+      )}
     </S.Container>
   );
 };

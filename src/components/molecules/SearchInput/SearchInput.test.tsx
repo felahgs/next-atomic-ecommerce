@@ -16,7 +16,6 @@ describe('SearchInput', () => {
     const input = screen.getByRole('textbox') as HTMLTextAreaElement;
     fireEvent.change(input, { target: { value: 'testing asdf' } });
 
-    screen.debug();
     expect(input.value).toBe('testing asdf');
 
     fireEvent.click(screen.getByRole('button'));

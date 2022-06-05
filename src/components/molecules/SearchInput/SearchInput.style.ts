@@ -11,7 +11,7 @@ export const Container = styled.div`
   position: relative;
 
   height: 38px;
-  max-width: 600px;
+  width: 668px;
 `;
 
 export const WrapperSearchIcon = styled.span`

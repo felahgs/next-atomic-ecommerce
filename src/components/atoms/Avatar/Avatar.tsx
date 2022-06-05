@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from 'next/image';
 
 import * as S from './Avatar.style';
 import * as T from './Avatar.types';

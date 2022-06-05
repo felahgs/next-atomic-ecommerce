@@ -21,7 +21,7 @@ export const Badge = styled.div<{ color: string }>`
   border-radius: 99px;
 
   font-weight: 700;
-  font-size: 14px;
+  font-size: 11px;
   font-family: 'Quicksand';
   line-height: 18px;
   color: #ffffff;
