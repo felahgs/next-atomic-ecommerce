@@ -8,6 +8,7 @@ module.exports = {
     '@storybook/addon-interactions',
     'storybook-addon-styled-component-theme/dist/preset',
   ],
+  staticDirs: ['../public'],
   framework: '@storybook/react',
   core: {
     builder: '@storybook/builder-webpack5',

@@ -13,9 +13,8 @@ export default {
 
 const Template: ComponentStory<typeof Badge> = (args) => (
   <Badge {...args}>
-    <Button variant='raised'>My Cart</Button>
+    <Button variant="raised">My Cart</Button>
   </Badge>
-  
 );
 export const Default = Template.bind({});
 Default.args = {

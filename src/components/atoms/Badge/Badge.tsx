@@ -10,8 +10,10 @@ export const Badge = ({ color, value, children }: T.Badge) => {
 
   if (!value || value <= 0) return null;
 
-  return <S.Container>
-    {children}
-    <S.Badge color={color || (colors.red as string)}>{value}</S.Badge>
-  </S.Container>;
+  return (
+    <S.Container>
+      {children}
+      <S.Badge color={color || (colors.red as string)}>{value}</S.Badge>
+    </S.Container>
+  );
 };

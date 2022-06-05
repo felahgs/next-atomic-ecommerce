@@ -7,11 +7,11 @@ const Text = ({ children }: T.Text) => {
   return <S.Text>{children}</S.Text>;
 };
 
-Text.Caption = function({children}: T.Text) {
+Text.Caption = function ({ children }: T.Text) {
   return <S.Caption>{children}</S.Caption>;
 };
 
-Text.Subcaption = function({children}: T.Text) {
+Text.Subcaption = function ({ children }: T.Text) {
   return <S.Subcaption>{children}</S.Subcaption>;
 };
 

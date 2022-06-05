@@ -11,7 +11,7 @@ export const Button = styled.button<{
 
   min-width: 104px;
   height: 40px;
-  
+
   font-family: 'Quicksand';
   font-style: normal;
   font-weight: 700;
@@ -22,7 +22,7 @@ export const Button = styled.button<{
 
   transition: 0.2s;
   cursor: pointer;
-  
+
   :hover {
     filter: brightness(95%);
   }

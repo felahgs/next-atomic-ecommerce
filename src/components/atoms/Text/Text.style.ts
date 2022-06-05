@@ -20,13 +20,12 @@ export const Caption = styled.p`
 `;
 
 export const Subcaption = styled.p`
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 143%;
-letter-spacing: 0.018em;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  letter-spacing: 0.018em;
 
-color: ${({ theme }) => theme.colors.subcaption};
+  color: ${({ theme }) => theme.colors.subcaption};
 `;
-

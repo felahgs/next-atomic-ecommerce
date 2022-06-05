@@ -19,7 +19,7 @@ export const Badge = styled.div<{ color: string }>`
   align-items: center;
   justify-content: center;
   border-radius: 99px;
-  
+
   font-weight: 700;
   font-size: 14px;
   font-family: 'Quicksand';

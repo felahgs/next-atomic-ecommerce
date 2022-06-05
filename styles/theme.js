@@ -6,6 +6,7 @@ export const lightTheme = {
     titles: '#000000',
     text: '#19191D',
     subcaption: '#787885',
+    border: '#B4BBE2',
 
     ...colors,
   },

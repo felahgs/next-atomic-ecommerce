@@ -31,4 +31,3 @@ const TemplateC: ComponentStory<typeof Text> = (args) => (
 export const Default = TemplateA.bind({});
 export const Title = TemplateB.bind({});
 export const Subtitle = TemplateC.bind({});
-
