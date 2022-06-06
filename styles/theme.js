@@ -3,10 +3,11 @@ import { colors } from './colors';
 export const lightTheme = {
   colors: {
     background: '#FFFFFF',
+    border: '#B4BBE2',
     titles: '#000000',
     text: '#19191D',
     subcaption: '#787885',
-    border: '#B4BBE2',
+    selection: colors.blue[70],
 
     ...colors,
   },

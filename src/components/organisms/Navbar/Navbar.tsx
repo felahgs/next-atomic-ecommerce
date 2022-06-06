@@ -25,6 +25,7 @@ const Navbar = () => {
 
       <S.ContainerRight>
         <Button>Sign in</Button>
+        {/* TODO: add value control */}
         <Badge value={12}>
           <Button>My cart</Button>
         </Badge>
