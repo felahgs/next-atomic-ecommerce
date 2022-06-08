@@ -1,15 +1,23 @@
 import React from 'react';
 import { BiSearchAlt2 } from 'react-icons/bi';
 import { IoClose } from 'react-icons/io5';
+import { MdViewList } from 'react-icons/md';
+import { MdViewModule } from 'react-icons/md';
 
 import * as T from './Icon.types';
 
 const icons = {
-  search: ({ size, color, title }: T.ImportedIcon) => (
-    <BiSearchAlt2 role={'img'} color={color} size={size} title={title} />
+  search: ({ size, color, title, style }: T.ImportedIcon) => (
+    <BiSearchAlt2 style={{...style}} role={'img'} color={color} size={size} title={title} />
   ),
-  close: ({ size, color, title }: T.ImportedIcon) => (
-    <IoClose role={'img'} color={color} size={size} title={title} />
+  close: ({ size, color, title, style }: T.ImportedIcon) => (
+    <IoClose style={{...style}} role={'img'} color={color} size={size} title={title} />
+  ),
+  grid: ({ size, color, title, style }: T.ImportedIcon) => (
+    <MdViewList style={{...style}} role={'img'} color={color} size={size} title={title} />
+  ),
+  list: ({ size, color, title, style }: T.ImportedIcon) => (
+    <MdViewModule style={{...style}} role={'img'} color={color} size={size} title={title} />
   ),
 };
 

@@ -7,7 +7,7 @@ export const lightTheme = {
     titles: '#000000',
     text: '#19191D',
     subcaption: '#787885',
-    selection: colors.blue[70],
+    selection: colors.blue[5],
 
     ...colors,
   },

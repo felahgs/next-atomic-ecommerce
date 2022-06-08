@@ -29,3 +29,15 @@ Close.args = {
   name: 'close',
   size: 45,
 };
+
+export const Grid = Template.bind({});
+Grid.args = {
+  name: 'grid',
+  size: 45,
+};
+
+export const List = Template.bind({});
+List.args = {
+  name: 'list',
+  size: 45,
+};

@@ -3,10 +3,12 @@ import React from 'react';
 import { render, screen } from 'tests/test-utils';
 
 import { Icon } from './Icon';
+import { IconsTypes } from './Icon.types';
+
 
 describe('Icon', () => {
-  it('should render the component', () => {
-    render(<Icon name="search" />);
+  it.each([['search'], ['close'], ['list'], ['grid']])('should render the component', (type) => {
+    render(<Icon name={type as IconsTypes} />);
     expect(screen.getByRole('img', { hidden: true })).toBeInTheDocument();
   });
 });
