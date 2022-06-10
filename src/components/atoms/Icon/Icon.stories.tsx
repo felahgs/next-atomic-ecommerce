@@ -41,3 +41,9 @@ List.args = {
   name: 'list',
   size: 45,
 };
+
+export const arrowDown = Template.bind({});
+arrowDown.args = {
+  name: 'arrowDown',
+  size: 45,
+};

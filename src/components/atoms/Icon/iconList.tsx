@@ -1,8 +1,8 @@
 import React from 'react';
 import { BiSearchAlt2 } from 'react-icons/bi';
 import { IoClose } from 'react-icons/io5';
-import { MdViewList } from 'react-icons/md';
-import { MdViewModule } from 'react-icons/md';
+import { MdViewList, MdViewModule } from 'react-icons/md';
+import { GoTriangleDown } from 'react-icons/go';
 
 import * as T from './Icon.types';
 
@@ -18,6 +18,9 @@ const icons = {
   ),
   list: ({ size, color, title, style }: T.ImportedIcon) => (
     <MdViewModule style={{...style}} role={'img'} color={color} size={size} title={title} />
+  ),
+  arrowDown: ({ size, color, title, style }: T.ImportedIcon) => (
+    <GoTriangleDown style={{...style}} role={'img'} color={color} size={size} title={title} />
   ),
 };
 
