@@ -21,10 +21,10 @@ const Template: ComponentStory<typeof Select> = (args) => (
 export const Default = Template.bind({});
 Default.args = {
   label: 'Sort by',
-  // onChange: (e) => alert('selected value: ' + e.target.value),
+  onChange: (e) => console.log('selected value: ' + e.target.value),
 };
 
 export const NoLabel = Template.bind({});
 NoLabel.args = {
-  // onChange: (e) => alert('selected value: ' + e.target.value),
+  onChange: (e) => console.log('selected value: ' + e.target.value),
 };

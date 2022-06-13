@@ -13,7 +13,9 @@ export default {
 
 const Template: ComponentStory<typeof Badge> = (args) => (
   <Badge {...args}>
-    <Button variant="raised">My Cart</Button>
+    <div
+      style={{ width: '100px', height: '30px', border: '1px solid black' }}
+    ></div>
   </Badge>
 );
 export const Default = Template.bind({});

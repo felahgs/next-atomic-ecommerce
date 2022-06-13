@@ -8,7 +8,6 @@ export const Container = styled.div<{offset: number}>`
   border: 1px solid ${({theme}) => theme.colors.gray[60]};
   border-radius: 4px;
   border-top: ${props  => props.offset ? 'none' : 'solid 1px'};
-  transition: all ease 0.5s;
   
   ::before {
     content: '';
@@ -21,8 +20,8 @@ export const Container = styled.div<{offset: number}>`
     position: absolute;
     left: 0;
     pointer-events: none;
+    transition: all ease 0.1s;
 
-    /* display: ${({offset}) => offset >= 1 ? 'initial' : 'none'}; */
     opacity: ${({offset}) => offset >= 1 ? '1' : '0'};
   }
 
@@ -38,6 +37,7 @@ export const Container = styled.div<{offset: number}>`
     right: 0;
     top: 0;
     pointer-events: none;
+    transition: all ease 0.1s;
 
     opacity: ${({offset}) => offset >= 1 ? '1' : '0'};
   }
@@ -58,7 +58,7 @@ export const Label = styled.label<{hasValue: boolean}>`
   bottom: 75%;
   left: 6%;
 
-  transition: all ease 0.5s;
+  transition: all ease 0.2s;
   pointer-events: none;
 
   ${(props) =>
