@@ -13,7 +13,7 @@ export default {
   argTypes: {},
 } as ComponentMeta<typeof Navbar>;
 
-const TemplateA: ComponentStory<typeof Navbar> = (args) => (
+const TemplateA: ComponentStory<typeof Navbar> = () => (
   <>
     <Navbar />
   </>

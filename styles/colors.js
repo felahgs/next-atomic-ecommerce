@@ -11,6 +11,7 @@ export const colors = {
   gray: {
     5: '#EDEDF0',
     60: '#5A5B6A',
+    70: '#4A4B57',
     100: '#19191D',
   },
 
