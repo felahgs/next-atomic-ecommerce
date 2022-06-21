@@ -70,7 +70,9 @@
   "resolutions": {
     "trim-newlines": "^4.0.2",
     "trim": "^1.0.1",
-    "glob-parent": "^5.1.2"
+    "glob-parent": "^5.1.2",
+    "got": ">=11.8.5"
+
   },
   "husky": {
     "hooks": {
