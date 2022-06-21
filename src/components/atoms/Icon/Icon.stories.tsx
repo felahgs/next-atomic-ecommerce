@@ -47,3 +47,21 @@ arrowDown.args = {
   name: 'arrowDown',
   size: 45,
 };
+
+export const star = Template.bind({});
+star.args = {
+  name: 'star',
+  size: 45,
+};
+
+export const halfStar = Template.bind({});
+halfStar.args = {
+  name: 'halfStar',
+  size: 45,
+};
+
+export const emptyStar = Template.bind({});
+emptyStar.args = {
+  name: 'emptyStar',
+  size: 45,
+};
