@@ -16,14 +16,25 @@ export const Rating = ({ value, color, size, hideValue }: T.Rating) => {
     EMPTY = 'emptyStar',
   }
 
+  const formatValue = (value: number) => {
+    if (value > 5) return 5;
+    if (value < 0) return 0;
+    return value.toFixed(2);
+  };
+
   const selectFill = (index: number) => {
-    if (Math.floor(value) === index && value % 1 != 0) return RATE_STAR.HALF;
+    if (Math.ceil(value) === index && value % 1 != 0) return RATE_STAR.HALF;
     if (value >= index) return RATE_STAR.FULL;
     return RATE_STAR.EMPTY;
   };
 
+  const formatedValue = formatValue(value);
+
   return (
-    <S.Rating style={{ color: color }}>
+    <S.Rating
+      title={`rating of ${formatedValue} stars`}
+      style={{ color: color }}
+    >
       {Array(5)
         .fill('')
         .map((_, i) => (
@@ -34,7 +45,7 @@ export const Rating = ({ value, color, size, hideValue }: T.Rating) => {
             name={selectFill(i + 1)}
           />
         ))}
-      {!hideValue && <S.Text>{value}</S.Text>}
+      {!hideValue && <S.Text>{formatedValue}</S.Text>}
     </S.Rating>
   );
 };
