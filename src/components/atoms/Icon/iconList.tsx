@@ -5,81 +5,37 @@ import { MdViewList, MdViewModule } from 'react-icons/md';
 import { GoTriangleDown } from 'react-icons/go';
 import { RiStarFill, RiStarHalfFill, RiStarLine } from 'react-icons/ri';
 
+import { camelCaseToTitleCase } from '@utils/textConverter';
+
 import * as T from './Icon.types';
 
-const icons = {
-  search: ({ size, color, title, style }: T.ImportedIcon) => (
-    <BiSearchAlt2
-      style={{ ...style }}
-      role={'img'}
-      color={color}
-      size={size}
-      title={title}
-    />
-  ),
-  close: ({ size, color, title, style }: T.ImportedIcon) => (
-    <IoClose
-      style={{ ...style }}
-      role={'img'}
-      color={color}
-      size={size}
-      title={title}
-    />
-  ),
-  grid: ({ size, color, title, style }: T.ImportedIcon) => (
-    <MdViewList
-      style={{ ...style }}
-      role={'img'}
-      color={color}
-      size={size}
-      title={title}
-    />
-  ),
-  list: ({ size, color, title, style }: T.ImportedIcon) => (
-    <MdViewModule
-      style={{ ...style }}
-      role={'img'}
-      color={color}
-      size={size}
-      title={title}
-    />
-  ),
-  arrowDown: ({ size, color, title, style }: T.ImportedIcon) => (
-    <GoTriangleDown
-      style={{ ...style }}
-      role={'img'}
-      color={color}
-      size={size}
-      title={title}
-    />
-  ),
-  star: ({ size, color, title, style }: T.ImportedIcon) => (
-    <RiStarFill
-      style={{ ...style }}
-      role={'img'}
-      color={color}
-      size={size}
-      title={title}
-    />
-  ),
-  halfStar: ({ size, color, title, style }: T.ImportedIcon) => (
-    <RiStarHalfFill
-      style={{ ...style }}
-      role={'img'}
-      color={color}
-      size={size}
-      title={title}
-    />
-  ),
-  emptyStar: ({ size, color, title, style }: T.ImportedIcon) => (
-    <RiStarLine
-      style={{ ...style }}
-      role={'img'}
-      color={color}
-      size={size}
-      title={title}
-    />
-  ),
-};
+export const ReactIcon = ({
+  name,
+  size,
+  color,
+  title,
+  style,
+}: T.ImportedIcon) => {
+  const props = {
+    style: { ...style },
+    role: 'img',
+    color: color,
+    size: size,
+    title: title,
+    name: name,
+    alt: `${camelCaseToTitleCase(name)} Icon`,
+  };
 
-export default icons;
+  const iconList: T.IconList = {
+    search: () => <BiSearchAlt2 {...props} />,
+    close: () => <IoClose {...props} />,
+    grid: () => <MdViewModule {...props} />,
+    list: () => <MdViewList {...props} />,
+    arrowDown: () => <GoTriangleDown {...props} />,
+    star: () => <RiStarFill {...props} />,
+    halfStar: () => <RiStarHalfFill {...props} />,
+    emptyStar: () => <RiStarLine {...props} />,
+  };
+
+  return iconList[name]();
+};

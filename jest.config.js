@@ -14,6 +14,7 @@ module.exports = {
     '^@molecules(.*)$': '<rootDir>/src/components/molecules$1',
     '^@organisms(.*)$': '<rootDir>/src/components/organisms$1',
     '^@templates(.*)$': '<rootDir>/src/components/templates$1',
+    '^@utils(.*)$': '<rootDir>/src/utils$1',
     '^pages(.*)$': '<rootDir>/pages$1',
     '^tests(.*)$': '<rootDir>/tests$1',
     '^styles(.*)$': '<rootDir>/styles$1',
