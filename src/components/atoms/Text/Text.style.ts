@@ -29,3 +29,12 @@ export const Subcaption = styled.p`
 
   color: ${({ theme }) => theme.colors.subcaption};
 `;
+
+export const Price = styled.p`
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: 0.0075em;
+`;

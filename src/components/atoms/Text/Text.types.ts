@@ -1,4 +1,4 @@
 export type Text = {
-  children: string;
+  children?: string | string[];
   style?: {[value: string]: string}
 };
