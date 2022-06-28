@@ -4,7 +4,7 @@ import { render, screen } from 'tests/test-utils';
 
 import { Navbar } from './Navbar';
 
-describe('Button', () => {
+describe('Navbar', () => {
   it('should render the component', () => {
     render(<Navbar />);
     expect(screen.getByRole('navigation')).toBeInTheDocument();
