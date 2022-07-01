@@ -10,8 +10,8 @@
     "prettier": "prettier --write",
     "test": "jest --verbose",
     "test:cov": "jest --coverage",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
+    "storybook": "start-storybook -p 6006 -s ./public",
+    "build-storybook": "build-storybook -s ./public",
     "typecheck": "tsc -p . --noEmit",
     "prepare": "husky install",
     "cypress:open": "cypress open",
@@ -64,6 +64,7 @@
     "jest-cli": "^28.1.0",
     "jest-environment-jsdom": "^28.1.0",
     "prettier": "2.6.2",
+    "storybook-addon-next": "^1.6.7",
     "tsconfig-paths-webpack-plugin": "^3.5.2",
     "typescript": "4.7.2"
   },
@@ -72,7 +73,6 @@
     "trim": "^1.0.1",
     "glob-parent": "^5.1.2",
     "got": ">=11.8.5"
-
   },
   "husky": {
     "hooks": {
