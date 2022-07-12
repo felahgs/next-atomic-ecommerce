@@ -3,7 +3,12 @@ import { BiSearchAlt2 } from 'react-icons/bi';
 import { IoClose } from 'react-icons/io5';
 import { MdViewList, MdViewModule } from 'react-icons/md';
 import { GoTriangleDown } from 'react-icons/go';
-import { RiStarFill, RiStarHalfFill, RiStarLine } from 'react-icons/ri';
+import {
+  RiStarFill,
+  RiStarHalfFill,
+  RiStarLine,
+  RiHeartLine,
+} from 'react-icons/ri';
 
 import { camelCaseToTitleCase } from '@utils/textConverter';
 
@@ -35,6 +40,7 @@ export const ReactIcon = ({
     star: () => <RiStarFill {...props} />,
     halfStar: () => <RiStarHalfFill {...props} />,
     emptyStar: () => <RiStarLine {...props} />,
+    emptyHeart: () => <RiHeartLine {...props} />,
   };
 
   return iconList[name]();

@@ -65,3 +65,9 @@ emptyStar.args = {
   name: 'emptyStar',
   size: 45,
 };
+
+export const emptyHeart = Template.bind({});
+emptyHeart.args = {
+  name: 'emptyHeart',
+  size: 45,
+};
