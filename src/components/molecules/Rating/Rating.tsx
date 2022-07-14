@@ -19,7 +19,7 @@ export const Rating = ({ value, color, size, hideValue }: T.Rating) => {
   const formatValue = (value: number) => {
     if (value > 5) return 5;
     if (value < 0) return 0;
-    return value.toFixed(2);
+    return value?.toFixed(2);
   };
 
   const selectFill = (index: number) => {

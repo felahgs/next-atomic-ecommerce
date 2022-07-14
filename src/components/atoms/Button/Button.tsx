@@ -6,6 +6,7 @@ import * as T from './Button.types';
 export const Button = ({
   onClick,
   children,
+  style,
   size = 'medium',
   variant = 'default',
   disabled = false,
@@ -16,6 +17,7 @@ export const Button = ({
 
   return (
     <S.Button
+      style={{ ...style }}
       onClick={handleClick}
       disabled={disabled}
       size={size}

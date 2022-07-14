@@ -4,11 +4,14 @@ export const Button = styled.button<{
   variant: 'default' | 'raised';
   size: string;
 }>`
-  border: 1px solid ${({ theme }) => theme.colors.blue[30]};
+  border: 2px solid ${({ theme }) => theme.colors.blue[30]};
   border-radius: 4px;
   background-color: #fff;
   transition: ease 0.5;
 
+  display: flex;
+  align-items: center;
+  gap: 5px;
   min-width: 104px;
   height: 40px;
 
