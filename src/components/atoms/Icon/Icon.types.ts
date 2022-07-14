@@ -1,7 +1,7 @@
-export type IconsTypes = 'search' | 'close' | 'grid' | 'list' | 'arrowDown' | 'star' | 'halfStar' | 'emptyStar' | 'emptyHeart'
+export type IconsTypes = 'search' | 'close' | 'grid' | 'list' | 'arrowDown' | 'star' | 'halfStar' | 'emptyStar' | 'emptyHeart' | 'heart'
 
 export type Icon = {
-  name: 'search' | 'close' | 'grid' | 'list' | 'arrowDown' | 'star' | 'halfStar' | 'emptyStar' | 'emptyHeart';
+  name: 'search' | 'close' | 'grid' | 'list' | 'arrowDown' | 'star' | 'halfStar' | 'emptyStar' | 'emptyHeart' | 'heart';
   size?: number | string;
   color?: string;
   title?: string;

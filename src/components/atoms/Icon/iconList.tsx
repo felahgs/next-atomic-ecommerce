@@ -8,6 +8,7 @@ import {
   RiStarHalfFill,
   RiStarLine,
   RiHeartLine,
+  RiHeartFill,
 } from 'react-icons/ri';
 
 import { camelCaseToTitleCase } from '@utils/textConverter';
@@ -41,6 +42,7 @@ export const ReactIcon = ({
     halfStar: () => <RiStarHalfFill {...props} />,
     emptyStar: () => <RiStarLine {...props} />,
     emptyHeart: () => <RiHeartLine {...props} />,
+    heart: () => <RiHeartFill {...props} />,
   };
 
   return iconList[name]();

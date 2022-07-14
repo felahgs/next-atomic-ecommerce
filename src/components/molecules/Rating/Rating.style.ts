@@ -3,8 +3,9 @@ import styled from 'styled-components';
 export const Rating = styled.div`
   display: flex;
   flex-direction: row;
+  align-items: center;
 
-  padding: 6px 12px;
+  padding: 6px 0;
   width: fit-content;
 `;
 
